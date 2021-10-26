@@ -8,7 +8,7 @@ def cut_sum (a):
     return(sum(s2))
 print(f'Сумма элементов числа: {cut_sum (num)}')
 
-#def sumnum(x):
+def sumnum(x):
 n=0
 for i in range(len(x)):
     n+=int(x[i])
