@@ -7,14 +7,16 @@ def spisok ():
         if r not in t:
             t.append(r)
     return (t)
-#print (spisok())
 sp = spisok()
 print (sp)
 def zamena (s):
-    ss = sorted(s)
-    m = ss [-1]
+    m = max(s)
     n = int(input(f'Введите любое число от 0 до {m}: \n'))
-    ss[-1] = n
-    print (ss)
+    for i in s:
+        if i == m:
+            z = s.index(i)
+            s.pop(z)
+            s.insert(z,n)
     print(f'Программа удачно заменила {m} на {n}')
+    print(f'Новый список: \n{s}')
 zamena (sp)
